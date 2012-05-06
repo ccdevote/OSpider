@@ -1,0 +1,4 @@
+com.horizon.spider.plugin
+描述：爬虫的扩展模块，主要提供各种用户自定义的扩展
+	extractor默认也会检测这个包下的扩展类
+	用户定义好扩展类后需要主动填写配置文件，注册给extractor

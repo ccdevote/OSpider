@@ -1,0 +1,3 @@
+com.horiozn.spider.url
+描述：spider的url处理模块，集成了包括对url的
+	 封装，分析，去重，存储等功能

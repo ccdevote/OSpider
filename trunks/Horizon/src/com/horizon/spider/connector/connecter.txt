@@ -1,0 +1,3 @@
+com.horizon.spider.cocnnector包
+功能:爬虫的链接模块
+类  :HttpClientManager//进行链接管理，包括基本的请求信息，和下载网页

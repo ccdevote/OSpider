@@ -1,0 +1,3 @@
+com.horizon.spider.writer
+描述：爬虫的writer模块，为抓取的内容提供持久化支持
+	包括   硬盘镜像|Hbase|Mysql  等持久化方式
