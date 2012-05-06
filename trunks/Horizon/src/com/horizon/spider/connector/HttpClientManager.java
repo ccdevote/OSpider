@@ -55,9 +55,8 @@ public class HttpClientManager {
 	private static Log log = LogFactory.getLog(HttpClientManager.class
 			.getName());
 
-	public HttpClientManager(boolean write, String dir) {
+	public HttpClientManager(boolean write) {
 		this.WRITE = write;
-		this.dir = dir;
 		initHttpClient();
 	}
 
