@@ -1,7 +1,6 @@
 package com.horizon.spider.fetcher;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import org.jsoup.Jsoup;
@@ -20,50 +19,16 @@ import com.horizon.spider.url.URLFilter;
  */
 public class FetchURL {
 	private Map<String, String> urlMap = new HashMap<String, String>();
-	// save all the urls witch we find from the page
-	private List<String> urlList;
-	// save the truth urls witch we need
-	private Queue<String> urlQueue;
+	private Queue<String> urlQueue=null;
 	private URLFilter urlFilter;
 	private String baseURL;
 
-	public String getBaseURL() {
-		return baseURL;
-	}
-
-	public void setBaseURL(String baseURL) {
-		this.baseURL = baseURL;
-	}
-
-	public URLFilter getUrlFilter() {
-		return urlFilter;
-	}
-
-	private void setUrlFilter(URLFilter urlFilter) {
-		this.urlFilter = urlFilter;
-	}
-
-	public List<String> getUrlList() {
-		return urlList;
-	}
-
-	private void setUrlList(List<String> urlList) {
-		this.urlList = urlList;
-	}
-
-	public Queue<String> getUrlQueue() {
-		return urlQueue;
-	}
-
-	private void setUrlQueue(Queue<String> urlQueue) {
-		this.urlQueue = urlQueue;
-	}
-
+	
 	private FetchURL(String baseURL) {
-		setUrlList(new LinkedList<String>());
-		setUrlQueue(new LinkedList<String>());
-		setUrlFilter(new URLFilter());
-		setBaseURL(baseURL);
+		new LinkedList<String>();
+		urlQueue=new LinkedList<String>();
+		urlFilter=new URLFilter();
+		this.baseURL=baseURL;
 	}
 
 	/**
@@ -85,8 +50,7 @@ public class FetchURL {
 			for (Element link : links) {
 				String linkHref = link.absUrl("href");
 				String linkText = link.text();
-				if (getUrlFilter().accept(linkHref)) {
-				
+				if (urlFilter.accept(linkHref)) {
 					urlMap.put(linkHref, linkText);
 					// System.out.println(linkText + ":" + linkHref);
 				}
