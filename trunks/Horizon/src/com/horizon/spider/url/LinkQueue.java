@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import com.horizon.spider.util.SimpleBloomFilter;
+
 /**
  * URL队列，用来存放URL
  * @method 

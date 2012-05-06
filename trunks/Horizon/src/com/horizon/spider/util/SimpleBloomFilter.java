@@ -1,4 +1,4 @@
-package com.horizon.spider.url;
+package com.horizon.spider.util;
 
 import java.io.File;
 import java.io.FileInputStream;
