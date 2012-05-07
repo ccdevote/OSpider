@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import com.horizon.spider.connector.HttpClientManager;
+import com.horizon.spider.fetcher.FetchURL;
 import com.horizon.spider.fetcher.Fetcher;
 import com.horizon.spider.url.LinkQueue;
 /**
@@ -46,8 +47,8 @@ public class Spider {
 		String fu=LinkQueue.getUnVisitedURL().getCriUrl();
 		System.out.println("====开始抓取首页:"+fu+"======");
 		String content=cm.doGet(fu);
-		/*LinkQueue.addUnVisitedURL(FetchURL.getInstance(fu)
-				.fetchUrls(content));*/
+		LinkQueue.addUnVisitedURL(FetchURL.getInstance(fu)
+				.fetchUrls(content));
 		// 将抓取过的信息放入VisitedURL列表进行记录
 		LinkQueue.addVisitedUrl(fu);
 		cm.release();
