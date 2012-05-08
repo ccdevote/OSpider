@@ -1,2 +1,0 @@
-com.horizon.spider.order
-描述：任务模块，主要把前端提交的任务描述以及配置信息封装为Order任务提供给Spider类作为初始化依据
