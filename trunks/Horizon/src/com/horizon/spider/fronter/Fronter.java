@@ -11,7 +11,7 @@ package com.horizon.spider.fronter;
  * 				.优先级最低的放入待定队列，以根据实际时间限制以及深度限制决定是否进行抓取
  * 	        
  * @author MZY
- * 
+ * @date 2012-05-08 23:18:00
  *
  */
 public abstract class Fronter {
