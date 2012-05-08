@@ -1,0 +1,3 @@
+com.horizon.spider.fronter
+描述：链接制造工厂模块
+类  ：基类Fronter包括可自定义的URL过滤方法；主要操作LinkQueue
