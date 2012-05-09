@@ -1,0 +1,3 @@
+com.horizon.spider.api
+描述：该模块提供整个spider功能的接口给其他模块使用
+类  ：SpiderAPI封装spider的api
