@@ -5,10 +5,28 @@
 <title>创建新任务</title>
 </head>
 <body>
-<h1>为爬虫创建新任务</h1>
-<form action="action/BuildOrder!buildOrder" method="post">
-		<input type="text" name="url"/>
-		<input type="submit" value="提交"/>
-</form>
+	<h1>为爬虫创建新任务</h1>
+	<form action="action/BuildOrder!buildOrder" method="post">
+		<p>
+			<br>/** * 任务类，根据设置的参数初始化爬虫的任务 
+			<br>* @author MZY 
+			<br>* @date 2012-05-09 23:03 
+			<br>*@version 1.0 
+			<br>* 任务id： 
+			<br>* 任务名：String<input name="taskName" /><br>
+			<br> * 任务描述：String<input name="taskDescription" /><br>
+			<br> * 入口url：String<input name="firstURL" /><br>
+			<br> * 最大线程数量：0&lt;int&lt;100<input name="maxThreads" /><br>
+			<br> * 爬行深度：0&lt;int<input name="depth" /><br>
+			<br> * 主题模板:String<input name="template" /><br>
+			<br> * 分值限制:double<input name="boost" /><br>
+			<br> * 最大下载数量:long<input name="maxDownloads" /><br>
+			<br> * 最大下载流量:long<input name="maxDownloadSize" /><br>
+			<br> * 最大下载时间:int * */<input name="maxDownloadTime" /><br>
+			 <input type="submit" value="提交" />
+		</p>
+
+
+	</form>
 </body>
 </html>

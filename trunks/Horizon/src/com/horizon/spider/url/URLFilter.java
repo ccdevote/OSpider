@@ -32,6 +32,7 @@ public class URLFilter {
 		pconlineURL.add("http://pdlib.pconline.com.cn/product/");
 		pconlineURL.add("http://img.pconline.com.cn/images/product/");
 		ss=new StringSearch(pconlineURL);
+		ss.findAll(url);
 		long length=0;//=ss.findAll(url).length;
 		//System.out.println(length);
 		if(length>=1){
