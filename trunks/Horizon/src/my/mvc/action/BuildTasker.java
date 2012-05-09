@@ -6,7 +6,7 @@ import org.apache.commons.beanutils.BeanUtils;
 
 import com.horizon.spider.spider.Tasker;
 
-public class BuildOrder {
+public class BuildTasker {
 	
 	public String buildOrder(Map<String, String[]> param) {
 		try {
