@@ -24,6 +24,7 @@ public class Spider {
 	private CountDownLatch BEGIN;
 	private CountDownLatch END;
 	private Map<Integer,Future<String>> future;
+	@SuppressWarnings("unused")
 	private Tasker task;
 	private static Log log = LogFactory.getLog(Spider.class);
 	public Integer getDOWNLOAD_THREAD() {
