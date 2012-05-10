@@ -1,4 +1,4 @@
-package com.horizon.spider.spider;
+package com.horizon.spider.tasker;
 
 /**
  * 任务类，根据设置的参数初始化爬虫的任务

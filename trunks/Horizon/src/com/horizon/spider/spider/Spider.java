@@ -11,6 +11,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import com.horizon.spider.connector.HttpClientManager;
 import com.horizon.spider.fetcher.Fetcher;
+import com.horizon.spider.tasker.Tasker;
 import com.horizon.spider.url.LinkQueue;
 /**
  * 爬虫主类

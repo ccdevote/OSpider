@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 import org.apache.commons.beanutils.BeanUtils;
 
-import com.horizon.spider.spider.Tasker;
+import com.horizon.spider.tasker.Tasker;
 
 public class BuildTasker {
 	

@@ -1,0 +1,3 @@
+com.horizon.spider.tasker
+功能：主调部分，包括根据Tasker初始化爬虫任务，以及进行线程管理
+类  ：Tasker 爬虫任务类，有前端传递的参数封装而成
