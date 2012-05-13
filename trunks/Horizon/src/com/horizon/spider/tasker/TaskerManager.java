@@ -3,6 +3,9 @@ package com.horizon.spider.tasker;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.horizon.spider.api.SpiderAPI;
+import com.horizon.spider.spider.Spider;
+
 /**
  * Spider的Tasker管理类
  * @author MZY
@@ -12,12 +15,12 @@ import java.util.Map;
 public class TaskerManager {
 	private Map<Integer,Tasker> taskers=new HashMap<Integer,Tasker>();
 	private static int id=0;
-	public void buildTasker(Tasker task){
+	public TaskerManager(Tasker task) {
+		buildTasker(task);
+	}
+	private void buildTasker(Tasker task){
 		//id从0开始
 		task.setTaskid(id++);
 		taskers.put(task.getTaskid(), task);
-	}
-	public static TaskerManager buildManager(){
-		return new TaskerManager();
 	}
 }

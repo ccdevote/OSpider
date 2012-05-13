@@ -5,11 +5,11 @@
   	<servlet-class>my.mvc.controler.Forever</servlet-class>
   	<init-param>
   		<param-name>packages</param-name>
-  		<param-value>my.mvc.action</param-value>
+  		<param-value>com.horizon.spider.action</param-value>
   	</init-param>
   	<init-param>
   		<param-name>actions</param-name>
-  		<param-value>BuildOrder</param-value>
+  		<param-value>SpiderAction</param-value>
   	</init-param>
   	<load-on-startup>1</load-on-startup>
   </servlet>
@@ -17,6 +17,24 @@
   	<servlet-name>Controler</servlet-name>
   	<url-pattern>/action/*</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>ForeverContext</display-name>
+    <filter-name>ForeverContext</filter-name>
+    <filter-class>my.mvc.filter.ForeverContext</filter-class>
+    <init-param>
+      <description>上传文件保存路径</description>
+      <param-name>uploadDir</param-name>
+      <param-value>/home/Horizon/uploadfile</param-value>
+    </init-param>
+    <init-param>
+      <param-name>serverAddress</param-name>
+      <param-value>http://localhost:8080/Horizon</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>ForeverContext</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <display-name>Horizon</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

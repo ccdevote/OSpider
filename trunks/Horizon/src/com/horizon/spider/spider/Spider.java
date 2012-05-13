@@ -36,6 +36,7 @@ public class Spider {
 	}
 	public Spider(Tasker task) {
 		this.task=task;
+		log.info("init Spider"+task.getTaskid());
 		setDOWNLOAD_THREAD(task.getMaxThreads());// 初始化线程池大小
 		LinkQueue.addUnVisitedURL(task.getFirstURL());// 将种子添加到带抓取队列
 		// 创建线程池
@@ -49,7 +50,7 @@ public class Spider {
 	public void start() {
 		for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
 			log.info("初始化线程：" + i);
-			future.put(i,es.submit(new Fetcher(i, BEGIN, END)));
+			es.submit(new Fetcher(i, BEGIN, END));
 		}
 		HttpClientManager cm = new HttpClientManager(true);
 		String fu=LinkQueue.getUnVisitedURL().getCriUrl();
