@@ -10,11 +10,11 @@ import org.apache.commons.beanutils.BeanUtils;
 
 import com.horizon.spider.api.SpiderAPI;
 import com.horizon.spider.tasker.Tasker;
-import com.horizon.spider.tasker.TaskerManager;
 
 public class SpiderAction {
 	SpiderAPI sapi;
-	@Control(stype=@Type(2),success="control.html",input="user/register.html")
+
+	@Control(stype = @Type(2), success = "control.html", input = "user/register.html")
 	public String buildOrder(Map<String, String[]> param) {
 		try {
 			Tasker task = new Tasker();
@@ -29,7 +29,8 @@ public class SpiderAction {
 		}
 		return "success";
 	}
-	public String startSpider(){
+
+	public String startSpider() {
 		System.out.println("SpiderAction start spider");
 		sapi.startSpider();
 		return "success";
