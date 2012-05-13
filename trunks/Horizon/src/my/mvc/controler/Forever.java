@@ -162,7 +162,10 @@ public class Forever extends HttpServlet {
 					if(!b.equals("success"))return "input";
 				}
 				int length=med.getParameterTypes().length;
+				log.info("Params' length="+length);
 				switch(length){
+				case 0:result=med.invoke(act);
+					break;
 				case 1:
 					result=med.invoke(act, params);//new ProxyExcute(act,med,param).proxyObject().start();//med.invoke(act,realParam);//med.invoke(Proxy.newProxyInstance(act.getClass().getClassLoader(),act.getClass().getInterfaces(), new ProxyExcute(act,med)), realParam);//med.invoke(new ProxyExcute(act).proxyMethod(), realParam);
 					break;
