@@ -47,10 +47,23 @@ public class HttpClientManager {
 	public final static int CONNECT_TIMEOUT = 100000;
 	public final static int WAITING_FOR_CONTINUE = 5000;
 	private static final String CHARSET_UTF8 = "UTF-8";
+	/**
+	 * @uml.property  name="httpClient"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private DefaultHttpClient httpClient;
 	private static final String DEFAULT_SUB = ".html";
+	/**
+	 * @uml.property  name="wRITE"
+	 */
 	private boolean WRITE;
+	/**
+	 * @uml.property  name="dir"
+	 */
 	private String dir;
+	/**
+	 * @uml.property  name="url"
+	 */
 	private String url;
 	private static Log log = LogFactory.getLog(HttpClientManager.class
 			.getName());
@@ -97,6 +110,10 @@ public class HttpClientManager {
 		}
 	};
 	// 使用ResponseHandler接口处理响应，HttpClient使用ResponseHandler会自动管理连接的释放，解决了对连接的释放管理
+	/**
+	 * @uml.property  name="responseHandler"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private ResponseHandler<String> responseHandler = new ResponseHandler<String>() {
 		// 自定义响应处理
 		public String handleResponse(HttpResponse response)
@@ -176,6 +193,10 @@ public class HttpClientManager {
 	 * @throws Exception
 	 */
 	private static int count = 0;
+	/**
+	 * @uml.property  name="httpget"
+	 * @uml.associationEnd  
+	 */
 	HttpGet httpget;
 
 	public String doGet(String url) {

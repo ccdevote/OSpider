@@ -15,9 +15,22 @@ import com.horizon.spider.url.LinkQueue;
  * @version 1.0
  */
 public class Fetcher implements Callable<String> {
+	/**
+	 * @uml.property  name="index"
+	 */
 	private int index;
+	/**
+	 * @uml.property  name="end"
+	 */
 	private CountDownLatch end;
+	/**
+	 * @uml.property  name="begin"
+	 */
 	private CountDownLatch begin;
+	/**
+	 * @uml.property  name="log"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private Log log = LogFactory.getLog(Fetcher.class.getName());
 
 	/**

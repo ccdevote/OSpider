@@ -21,19 +21,47 @@ import com.horizon.spider.url.LinkQueue;
  * 
  */
 public class Spider {
+	/**
+	 * @uml.property  name="dOWNLOAD_THREAD"
+	 */
 	private Integer DOWNLOAD_THREAD;
+	/**
+	 * @uml.property  name="es"
+	 */
 	private ExecutorService es;
+	/**
+	 * @uml.property  name="bEGIN"
+	 */
 	private CountDownLatch BEGIN;
+	/**
+	 * @uml.property  name="eND"
+	 */
 	private CountDownLatch END;
+	/**
+	 * @uml.property  name="future"
+	 * @uml.associationEnd  qualifier="valueOf:java.lang.Integer java.util.concurrent.Future"
+	 */
 	private Map<Integer, Future<String>> future;
+	/**
+	 * @uml.property  name="task"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	@SuppressWarnings("unused")
 	private Tasker task;
 	private static Log log = LogFactory.getLog(Spider.class);
 
+	/**
+	 * @return
+	 * @uml.property  name="dOWNLOAD_THREAD"
+	 */
 	public Integer getDOWNLOAD_THREAD() {
 		return DOWNLOAD_THREAD;
 	}
 
+	/**
+	 * @param dOWNLOAD_THREAD
+	 * @uml.property  name="dOWNLOAD_THREAD"
+	 */
 	public void setDOWNLOAD_THREAD(Integer dOWNLOAD_THREAD) {
 		DOWNLOAD_THREAD = dOWNLOAD_THREAD;
 	}

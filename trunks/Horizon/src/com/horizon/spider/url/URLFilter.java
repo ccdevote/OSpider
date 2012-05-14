@@ -10,6 +10,10 @@ import com.horizon.spider.util.StringSearch;
 
 public class URLFilter {
 	private static StringSearch ss;
+	/**
+	 * @uml.property  name="pconlineURL"
+	 * @uml.associationEnd  multiplicity="(0 -1)" elementType="java.lang.String"
+	 */
 	private Set<String> pconlineURL=new HashSet<String>();
 
 	public boolean isURL(String url){

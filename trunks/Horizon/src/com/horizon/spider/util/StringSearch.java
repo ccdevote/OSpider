@@ -9,14 +9,37 @@ import java.util.Set;
 
 public class StringSearch {
 
+	/**
+	 * @uml.property  name="_root"
+	 * @uml.associationEnd  multiplicity="(1 1)" inverse="this$0:com.horizon.spider.util.StringSearch$TreeNode"
+	 */
 	private TreeNode _root;
+	/**
+	 * @uml.property  name="keywordsSet"
+	 * @uml.associationEnd  multiplicity="(0 -1)" elementType="java.lang.String"
+	 */
 	private Set<String> keywordsSet; // 关键字集合
 
+	/**
+	 * @author  Horizon
+	 */
 	private final class TreeNode {
 		private char _char; // 节点代表的字符
+		/**
+		 * @uml.property  name="_parent"
+		 * @uml.associationEnd  
+		 */
 		private TreeNode _parent; // 该节点的父节点
+		/**
+		 * @uml.property  name="_failure"
+		 * @uml.associationEnd  
+		 */
 		private TreeNode _failure; // 匹配失败后跳转的节点
 		private ArrayList<String> _results; // 存储模式串的数组变量
+		/**
+		 * @uml.property  name="_transitionsAr"
+		 * @uml.associationEnd  multiplicity="(0 -1)"
+		 */
 		private TreeNode[] _transitionsAr;
 		private Hashtable<Character, TreeNode> _transHash; // 存储孩子节点的哈希表
 
@@ -208,7 +231,13 @@ public class StringSearch {
 
 class StringSearchResult // 字符串检索结果类，由匹配上的关键字和关键字所在的位置组成
 {
+	/**
+	 * @uml.property  name="location"
+	 */
 	private int location;
+	/**
+	 * @uml.property  name="matchedkeyword"
+	 */
 	private String matchedkeyword;
 
 	public StringSearchResult(int location, String matchedkeyword) {
@@ -216,10 +245,18 @@ class StringSearchResult // 字符串检索结果类，由匹配上的关键字�
 		this.matchedkeyword = matchedkeyword;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="location"
+	 */
 	public int getLocation() {
 		return location;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="matchedkeyword"
+	 */
 	public String getMatchedkeyword() {
 		return matchedkeyword;
 	}

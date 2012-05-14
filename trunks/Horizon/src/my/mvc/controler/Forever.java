@@ -25,10 +25,28 @@ import my.mvc.annotation.AnnotationEngine;
  */
 public class Forever extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	/**
+	 * @uml.property  name="log"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private Log log=LogFactory.getLog(Forever.class);
+	/**
+	 * @uml.property  name="packages" multiplicity="(0 -1)" dimension="1"
+	 */
 	private String[] packages;
+	/**
+	 * @uml.property  name="actions" multiplicity="(0 -1)" dimension="1"
+	 */
 	private String[] actions;
+    /**
+	 * @uml.property  name="action"
+	 * @uml.associationEnd  multiplicity="(0 -1)" ordering="true" elementType="java.lang.Object" qualifier="actionName:java.lang.String java.lang.Object"
+	 */
     private Map<String,Object> action=new HashMap<String,Object>();
+    /**
+	 * @uml.property  name="method"
+	 * @uml.associationEnd  qualifier="key:java.lang.String java.lang.reflect.Method"
+	 */
     private Map<String,Method> method=new HashMap<String ,Method>();
     public Forever() {
         super();

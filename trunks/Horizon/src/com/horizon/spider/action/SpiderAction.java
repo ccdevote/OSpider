@@ -12,6 +12,10 @@ import com.horizon.spider.api.SpiderAPI;
 import com.horizon.spider.tasker.Tasker;
 
 public class SpiderAction {
+	/**
+	 * @uml.property  name="sapi"
+	 * @uml.associationEnd  
+	 */
 	SpiderAPI sapi;
 
 	@Control(stype = @Type(2), success = "control.html", input = "user/register.html")

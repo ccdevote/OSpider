@@ -21,9 +21,22 @@ import java.util.BitSet;
 public class SimpleBloomFilter {
 	private static final int DEFAULT_SIZE = 2 << 24;
 	private static final int[] seeds = new int[] { 7, 11, 13, 31, 37, 61 };
+	/**
+	 * @uml.property  name="size"
+	 */
 	private int size;
+	/**
+	 * @uml.property  name="bits"
+	 */
 	private BitSet bits;
+	/**
+	 * @uml.property  name="count"
+	 */
 	private int count;
+	/**
+	 * @uml.property  name="func"
+	 * @uml.associationEnd  multiplicity="(0 -1)"
+	 */
 	private SimpleHash[] func = new SimpleHash[seeds.length];
 
 	/**
@@ -140,6 +153,10 @@ public class SimpleBloomFilter {
 		}
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="count"
+	 */
 	public int getCount() {
 		// TODO Auto-generated method stub
 		return count;

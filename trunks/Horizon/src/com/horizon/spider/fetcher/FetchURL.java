@@ -18,9 +18,23 @@ import com.horizon.spider.url.URLFilter;
  * @date 2012-04-24
  */
 public class FetchURL {
+	/**
+	 * @uml.property  name="urlMap"
+	 * @uml.associationEnd  qualifier="linkHref:java.lang.String java.lang.String"
+	 */
 	private Map<String, String> urlMap = new HashMap<String, String>();
+	/**
+	 * @uml.property  name="urlQueue"
+	 */
 	private Queue<String> urlQueue=null;
+	/**
+	 * @uml.property  name="urlFilter"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private URLFilter urlFilter;
+	/**
+	 * @uml.property  name="baseURL"
+	 */
 	private String baseURL;
 
 	

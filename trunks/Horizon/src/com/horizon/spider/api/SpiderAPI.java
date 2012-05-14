@@ -15,8 +15,16 @@ import com.horizon.spider.tasker.TaskerManager;
  */
 public class SpiderAPI {
 	// 爬虫模块
+	/**
+	 * @uml.property  name="spider"
+	 * @uml.associationEnd  
+	 */
 	private Spider spider = null;
 	// 任务管理者
+	/**
+	 * @uml.property  name="tm"
+	 * @uml.associationEnd  
+	 */
 	private TaskerManager tm = null;
 
 	/**

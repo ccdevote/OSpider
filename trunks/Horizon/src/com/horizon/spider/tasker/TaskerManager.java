@@ -13,6 +13,10 @@ import com.horizon.spider.spider.Spider;
  * @version 1.0
  */
 public class TaskerManager {
+	/**
+	 * @uml.property  name="taskers"
+	 * @uml.associationEnd  qualifier="getTaskid:java.lang.Integer com.horizon.spider.tasker.Tasker"
+	 */
 	private Map<Integer,Tasker> taskers=new HashMap<Integer,Tasker>();
 	private static int id=0;
 	public TaskerManager(Tasker task) {

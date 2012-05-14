@@ -18,14 +18,33 @@ public abstract class MirrorExtractor {
 	
 	protected static final String NEWLINE = "<<\r\n>>";
 	//结果输出路径
+	/**
+	 * @uml.property  name="outputPath"
+	 */
 	private String outputPath = "";
 	//当前被处理的路径
+	/**
+	 * @uml.property  name="inputFilePath"
+	 */
 	private String inputFilePath = "";
 	//所有抓取到的网页的镜像路径
+	/**
+	 * @uml.property  name="mirrorDir"
+	 */
 	private String mirrorDir = "";
 	//存放处理后的产品图片的目录
+	/**
+	 * @uml.property  name="imageDir"
+	 */
 	private String imageDir = "";
+	/**
+	 * @uml.property  name="parser"
+	 * @uml.associationEnd  
+	 */
 	private Parser parser;
+	/**
+	 * @uml.property  name="nOIMAGE"
+	 */
 	private String NOIMAGE = "";
 	//对图片路径进行散列的算法，这里默认用MD5算法
 	protected static final String HASH_ALGORITHM = "md5";
@@ -121,46 +140,90 @@ public abstract class MirrorExtractor {
 			}
 		}
 	}
+	/**
+	 * @return
+	 * @uml.property  name="parser"
+	 */
 	public Parser getParser() {
 		return parser;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="outputPath"
+	 */
 	public String getOutputPath() {
 		return outputPath;
 	}
 
+	/**
+	 * @param outputPath
+	 * @uml.property  name="outputPath"
+	 */
 	public void setOutputPath(String outputPath) {
 		this.outputPath = outputPath;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="inputFilePath"
+	 */
 	public String getInputFilePath() {
 		return inputFilePath;
 	}
 
+	/**
+	 * @param inputFilePath
+	 * @uml.property  name="inputFilePath"
+	 */
 	public void setInputFilePath(String inputFilePath) {
 		this.inputFilePath = inputFilePath;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="mirrorDir"
+	 */
 	public String getMirrorDir() {
 		return mirrorDir;
 	}
 
+	/**
+	 * @param mirrorDir
+	 * @uml.property  name="mirrorDir"
+	 */
 	public void setMirrorDir(String mirrorDir) {
 		this.mirrorDir = mirrorDir;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="imageDir"
+	 */
 	public String getImageDir() {
 		return imageDir;
 	}
 
+	/**
+	 * @param imageDir
+	 * @uml.property  name="imageDir"
+	 */
 	public void setImageDir(String imageDir) {
 		this.imageDir = imageDir;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="nOIMAGE"
+	 */
 	public String getNOIMAGE() {
 		return NOIMAGE;
 	}
 
+	/**
+	 * @param nOIMAGE
+	 * @uml.property  name="nOIMAGE"
+	 */
 	public void setNOIMAGE(String nOIMAGE) {
 		NOIMAGE = nOIMAGE;
 	}

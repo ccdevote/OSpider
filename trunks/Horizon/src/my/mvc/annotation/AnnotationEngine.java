@@ -10,12 +10,36 @@ import my.mvc.filter.ForeverContext;
 
 public class AnnotationEngine {
 	private static Method method;
+	/**
+	 * @uml.property  name="hasAfter"
+	 */
 	private boolean hasAfter;
+	/**
+	 * @uml.property  name="hasBefore"
+	 */
 	private boolean hasBefore;
+	/**
+	 * @uml.property  name="hasControl"
+	 */
 	private boolean hasControl;
+	/**
+	 * @uml.property  name="before"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private Before before;
+	/**
+	 * @uml.property  name="control"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private Control control;
+	/**
+	 * @uml.property  name="after"
+	 * @uml.associationEnd  
+	 */
 	private After after;
+	/**
+	 * @uml.property  name="uri"
+	 */
 	private String uri=null;
 	public static AnnotationEngine getEngine(Method med){
 			return new AnnotationEngine(med);
