@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="SimpleBloomFilter" size="984,522" id="com.horizon.spider.util" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" name="SimpleBloomFilter" location="50,50" size="204,278" id="com.horizon.spider.util/SimpleBloomFilter">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="count" id="com.horizon.spider.util/SimpleBloomFilter#count"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,108">
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleBloomFilter" id="com.horizon.spider.util/SimpleBloomFilter#SimpleBloomFilter(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleBloomFilter" id="com.horizon.spider.util/SimpleBloomFilter#SimpleBloomFilter()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="com.horizon.spider.util/SimpleBloomFilter#add(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contains" id="com.horizon.spider.util/SimpleBloomFilter#contains(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="readBit" id="com.horizon.spider.util/SimpleBloomFilter#readBit(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveBit" id="com.horizon.spider.util/SimpleBloomFilter#saveBit(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="144,90">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.0/@sourceConnections.1" name="SimpleHash" location="299,166" size="144,88" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="106,36">
+          <children xsi:type="editmodel:MethodEditModel" name="SimpleHash" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash#SimpleHash(II)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="hash" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash#hash(Ljava.lang.String;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@" source="//@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,210" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@|com.horizon.spider.util/SimpleBloomFilter#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="func" location="0,44" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@|com.horizon.spider.util/SimpleBloomFilter$SimpleHash#func" multiplicityLabel="//@children.0/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - func" location="12,252" size="41,15" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="46,281" size="7,15" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Call->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Instantiate->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash" source="//@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,190" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,12"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=com.horizon.spider.util/SimpleBloomFilter;wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

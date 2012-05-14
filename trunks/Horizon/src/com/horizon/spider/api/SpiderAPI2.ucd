@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="SpiderAPI2" size="1005,691" id="com.horizon.spider.api" metadata="uml2-1.0" initialized="true" scrolledY="470" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="TaskerManager" location="50,349" size="186,85" id="com.horizon.spider.tasker/TaskerManager">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,18">
+      <children xsi:type="editmodel:MethodEditModel" name="TaskerManager" id="com.horizon.spider.tasker/TaskerManager#TaskerManager(Lcom.horizon.spider.tasker.Tasker;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.2" name="Spider" location="475,50" size="230,211" id="com.horizon.spider.spider/Spider">
+    <children xsi:type="editmodel:CompartmentEditModel" size="207,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="dOWNLOAD_THREAD" id="com.horizon.spider.spider/Spider#dOWNLOAD_THREAD"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,126">
+      <children xsi:type="editmodel:MethodEditModel" name="Spider" id="com.horizon.spider.spider/Spider#Spider(Lcom.horizon.spider.tasker.Tasker;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pause" id="com.horizon.spider.spider/Spider#pause()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="pause" id="com.horizon.spider.spider/Spider#pause(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="restart" id="com.horizon.spider.spider/Spider#restart()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="shutDown" id="com.horizon.spider.spider/Spider#shutDown()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="shutDownNow" id="com.horizon.spider.spider/Spider#shutDownNow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="start" id="com.horizon.spider.spider/Spider#start()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="SpiderAction" location="521,568" size="185,103" id="com.horizon.spider.action/SpiderAction">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,36">
+      <children xsi:type="editmodel:MethodEditModel" name="buildOrder" id="com.horizon.spider.action/SpiderAction#buildOrder(Ljava.util.Map;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startSpider" id="com.horizon.spider.action/SpiderAction#startSpider()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SpiderAPI" location="349,322" size="160,106" id="com.horizon.spider.api/SpiderAPI">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="com.horizon.spider.api/SpiderAPI#getInstance(Lcom.horizon.spider.tasker.Tasker;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="shutDownSpider" id="com.horizon.spider.api/SpiderAPI#shutDownSpider(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startSpider" id="com.horizon.spider.api/SpiderAPI#startSpider()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.horizon.spider.api/SpiderAPI@sapi+com.horizon.spider.action/SpiderAction@" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="sapi" location="150,106" id="com.horizon.spider.api/SpiderAPI@sapi+com.horizon.spider.action/SpiderAction@|com.horizon.spider.api/SpiderAPI#sapi" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ sapi" location="448,435" size="44,15" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="506,435" size="24,15" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="com.horizon.spider.api/SpiderAPI@sapi+com.horizon.spider.action/SpiderAction@|com.horizon.spider.action/SpiderAction#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.horizon.spider.tasker/TaskerManager@tm+com.horizon.spider.api/SpiderAPI@" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,66" id="com.horizon.spider.tasker/TaskerManager@tm+com.horizon.spider.api/SpiderAPI@|com.horizon.spider.api/SpiderAPI#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tm" location="186,39" id="com.horizon.spider.tasker/TaskerManager@tm+com.horizon.spider.api/SpiderAPI@|com.horizon.spider.tasker/TaskerManager#tm" multiplicityLabel="//@children.3/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tm" location="243,366" size="29,15" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="243,395" size="8,15" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.horizon.spider.spider/Spider@spider+com.horizon.spider.api/SpiderAPI@" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.2/@children.2" label="//@children.3/@sourceConnections.2/@children.0" sourceEnd="//@children.3/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="142,0" id="com.horizon.spider.spider/Spider@spider+com.horizon.spider.api/SpiderAPI@|com.horizon.spider.api/SpiderAPI#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="spider" location="16,211" id="com.horizon.spider.spider/Spider@spider+com.horizon.spider.api/SpiderAPI@|com.horizon.spider.spider/Spider#spider" multiplicityLabel="//@children.3/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - spider" location="498,268" size="52,15" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="476,268" size="8,15" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=com.horizon.spider.api/SpiderAPI;wireOptions=3;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

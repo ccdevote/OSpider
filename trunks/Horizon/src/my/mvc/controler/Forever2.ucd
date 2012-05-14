@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Forever2" size="962,496" id="my.mvc.controler" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1" name="AnnotationEngine" location="362,251" size="204,47" id="my.mvc.annotation/AnnotationEngine" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.annotation/AnnotationEngine-Standard::Send->my.mvc.controler/ActionException*my.mvc.annotation/AnnotationEngine-Standard::Instantiate->my.mvc.controler/ActionException" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Send»" size="123,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,41" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="190,5"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0" name="ActionException" location="121,287" size="190,32" id="my.mvc.controler/ActionException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Forever" location="210,60" size="111,32" id="my.mvc.controler/Forever" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.controler/Forever-Standard::Send->my.mvc.controler/ActionException*my.mvc.controler/Forever-Standard::Instantiate->my.mvc.controler/ActionException" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Send»" size="123,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,32" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.controler/Forever-Standard::Call->my.mvc.annotation/AnnotationEngine" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="38,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="71,32" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=my.mvc.controler/Forever;wireOptions=4;Product=eUML2;displayOptions=1"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+</editmodel:ClassDiagramEditModel>

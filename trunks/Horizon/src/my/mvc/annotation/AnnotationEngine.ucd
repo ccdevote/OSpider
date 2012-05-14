@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="AnnotationEngine" size="962,540" id="my.mvc.annotation" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="ActionException" location="639,390" size="190,85" id="my.mvc.controler/ActionException">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ActionException" id="my.mvc.controler/ActionException#ActionException(Ljava.lang.Exception;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AnnotationEngine" location="360,225" size="204,160" id="my.mvc.annotation/AnnotationEngine">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="146,108">
+      <children xsi:type="editmodel:MethodEditModel" name="AnnotationEngine" id="my.mvc.annotation/AnnotationEngine#AnnotationEngine(Ljava.lang.reflect.Method;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="afterMethod" id="my.mvc.annotation/AnnotationEngine#afterMethod()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="beforeMethod" id="my.mvc.annotation/AnnotationEngine#beforeMethod()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="excuteControl" id="my.mvc.annotation/AnnotationEngine#excuteControl(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEngine" id="my.mvc.annotation/AnnotationEngine#getEngine(Ljava.lang.reflect.Method;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="params" id="my.mvc.annotation/AnnotationEngine#params(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.annotation/AnnotationEngine-Standard::Send->my.mvc.controler/ActionException*my.mvc.annotation/AnnotationEngine-Standard::Instantiate->my.mvc.controler/ActionException" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Send»" size="123,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,128" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="5,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.annotation/AnnotationEngine-Soyatec::Access->my.mvc.filter/ForeverContext" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="60,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,18" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="243,193"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="ForeverContext" location="50,50" size="243,211" id="my.mvc.filter/ForeverContext">
+    <children xsi:type="editmodel:CompartmentEditModel" size="220,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="request" id="my.mvc.filter/ForeverContext#request"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="response" id="my.mvc.filter/ForeverContext#response"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="serverAddress" id="my.mvc.filter/ForeverContext#serverAddress"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uploadDir" id="my.mvc.filter/ForeverContext#uploadDir"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,72">
+      <children xsi:type="editmodel:MethodEditModel" name="ForeverContext" id="my.mvc.filter/ForeverContext#ForeverContext()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="destroy" id="my.mvc.filter/ForeverContext#destroy()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doFilter" id="my.mvc.filter/ForeverContext#doFilter(Ljavax.servlet.ServletRequest;Ljavax.servlet.ServletResponse;Ljavax.servlet.FilterChain;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="init" id="my.mvc.filter/ForeverContext#init(Ljavax.servlet.FilterConfig;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=my.mvc.annotation/AnnotationEngine;wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

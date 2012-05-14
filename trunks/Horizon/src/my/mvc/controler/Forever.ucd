@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Forever" size="957,491" id="my.mvc.controler" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" name="Forever" location="50,50" size="205,196" id="my.mvc.controler/Forever" runTimeClassModel="destory(),_DealURI(Ljava.lang.String;),execute(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;[Ljava.lang.String;),_GetActionMethod(Ljava.lang.Object;Ljava.lang.String;),init(Ljavax.servlet.ServletConfig;),_LoadActionByFullName(Ljava.lang.String;Ljava.lang.String;),Forever(),_LoadAction(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="182,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Forever" id="my.mvc.controler/Forever#Forever()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="_DealURI" id="my.mvc.controler/Forever#_DealURI(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="_GetActionMethod" id="my.mvc.controler/Forever#_GetActionMethod(Ljava.lang.Object;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="_LoadAction" id="my.mvc.controler/Forever#_LoadAction(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="_LoadActionByFullName" id="my.mvc.controler/Forever#_LoadActionByFullName(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="destory" id="my.mvc.controler/Forever#destory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="execute" id="my.mvc.controler/Forever#execute(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;[Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="init" id="my.mvc.controler/Forever#init(Ljavax.servlet.ServletConfig;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=my.mvc.controler/Forever;wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

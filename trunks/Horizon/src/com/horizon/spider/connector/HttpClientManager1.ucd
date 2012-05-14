@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="HttpClientManager1" size="944,302" id="com.horizon.spider.connector" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" name="HttpClientManager" location="50,50" size="242,232" id="com.horizon.spider.connector/HttpClientManager">
+    <children xsi:type="editmodel:CompartmentEditModel" size="219,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="cONNECT_TIMEOUT" id="com.horizon.spider.connector/HttpClientManager#cONNECT_TIMEOUT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAX_ROUTE_CONNECTIONS" id="com.horizon.spider.connector/HttpClientManager#mAX_ROUTE_CONNECTIONS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mAX_TOTAL_CONNECTIONS" id="com.horizon.spider.connector/HttpClientManager#mAX_TOTAL_CONNECTIONS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wAITING_FOR_CONTINUE" id="com.horizon.spider.connector/HttpClientManager#wAITING_FOR_CONTINUE"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,108">
+      <children xsi:type="editmodel:MethodEditModel" name="HttpClientManager" id="com.horizon.spider.connector/HttpClientManager#HttpClientManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HttpClientManager" id="com.horizon.spider.connector/HttpClientManager#HttpClientManager(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doGet" id="com.horizon.spider.connector/HttpClientManager#doGet(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="downloadFile" id="com.horizon.spider.connector/HttpClientManager#downloadFile(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initHttpClient" id="com.horizon.spider.connector/HttpClientManager#initHttpClient()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="release" id="com.horizon.spider.connector/HttpClientManager#release()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=com.horizon.spider.connector/HttpClientManager;wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

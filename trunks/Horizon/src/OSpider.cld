@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.java.amateras.uml.model.RootModel>
+  <sourceConnections/>
+  <targetConnections/>
+  <children>
+    <net.java.amateras.uml.classdiagram.model.ClassModel>
+      <isAbstract>false</isAbstract>
+      <propertyDescriptors>
+        <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+          <id class="string">_stereo_type</id>
+          <display>Stereo Type</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+        <org.eclipse.ui.views.properties.PropertyDescriptor>
+          <id class="string">_simpleEntityName</id>
+          <display>Simple Name</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.PropertyDescriptor>
+        <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+          <id class="string">_entityName</id>
+          <display>Name</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+        <org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+          <id class="string">_background</id>
+          <display>Background Color</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+        <org.eclipse.ui.views.properties.PropertyDescriptor>
+          <id class="string">_attrs</id>
+          <display>Attributes...</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.PropertyDescriptor>
+        <org.eclipse.ui.views.properties.PropertyDescriptor>
+          <id class="string">_operations</id>
+          <display>Operations...</display>
+          <incompatible>false</incompatible>
+        </org.eclipse.ui.views.properties.PropertyDescriptor>
+        <net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+          <id class="string">_abstract</id>
+          <display>abstract</display>
+          <incompatible>false</incompatible>
+        </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+      </propertyDescriptors>
+      <stereoType></stereoType>
+      <name>c1</name>
+      <constraint>
+        <height>-1</height>
+        <width>-1</width>
+        <x>258</x>
+        <y>137</y>
+      </constraint>
+      <sourceConnections>
+        <net.java.amateras.uml.classdiagram.model.DependencyModel>
+          <stereoType></stereoType>
+          <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+          <target class="net.java.amateras.uml.classdiagram.model.ClassModel">
+            <isAbstract>false</isAbstract>
+            <propertyDescriptors>
+              <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                <id class="string">_stereo_type</id>
+                <display>Stereo Type</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_simpleEntityName</id>
+                <display>Simple Name</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+              <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                <id class="string">_entityName</id>
+                <display>Name</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+              <org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+                <id class="string">_background</id>
+                <display>Background Color</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_attrs</id>
+                <display>Attributes...</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_operations</id>
+                <display>Operations...</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+              <net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+                <id class="string">_abstract</id>
+                <display>abstract</display>
+                <incompatible>false</incompatible>
+              </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+            </propertyDescriptors>
+            <stereoType></stereoType>
+            <name>c2</name>
+            <constraint>
+              <height>-1</height>
+              <width>-1</width>
+              <x>263</x>
+              <y>267</y>
+            </constraint>
+            <sourceConnections/>
+            <targetConnections>
+              <net.java.amateras.uml.classdiagram.model.DependencyModel reference="../../.."/>
+              <net.java.amateras.uml.classdiagram.model.GeneralizationModel>
+                <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../../../../.."/>
+                <target class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+                <bendpoints/>
+                <showIcon>true</showIcon>
+                <listeners serialization="custom">
+                  <java.beans.PropertyChangeSupport>
+                    <default>
+                      <source class="net.java.amateras.uml.classdiagram.model.GeneralizationModel" reference="../../../.."/>
+                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                    </default>
+                    <null/>
+                  </java.beans.PropertyChangeSupport>
+                </listeners>
+              </net.java.amateras.uml.classdiagram.model.GeneralizationModel>
+              <net.java.amateras.uml.classdiagram.model.AssociationModel>
+                <stereoType></stereoType>
+                <fromMultiplicity></fromMultiplicity>
+                <toMultiplicity></toMultiplicity>
+                <source class="net.java.amateras.uml.classdiagram.model.ClassModel">
+                  <isAbstract>false</isAbstract>
+                  <propertyDescriptors>
+                    <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                      <id class="string">_stereo_type</id>
+                      <display>Stereo Type</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                    <org.eclipse.ui.views.properties.PropertyDescriptor>
+                      <id class="string">_simpleEntityName</id>
+                      <display>Simple Name</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.PropertyDescriptor>
+                    <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                      <id class="string">_entityName</id>
+                      <display>Name</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                    <org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+                      <id class="string">_background</id>
+                      <display>Background Color</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+                    <org.eclipse.ui.views.properties.PropertyDescriptor>
+                      <id class="string">_attrs</id>
+                      <display>Attributes...</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.PropertyDescriptor>
+                    <org.eclipse.ui.views.properties.PropertyDescriptor>
+                      <id class="string">_operations</id>
+                      <display>Operations...</display>
+                      <incompatible>false</incompatible>
+                    </org.eclipse.ui.views.properties.PropertyDescriptor>
+                    <net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+                      <id class="string">_abstract</id>
+                      <display>abstract</display>
+                      <incompatible>false</incompatible>
+                    </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
+                  </propertyDescriptors>
+                  <stereoType></stereoType>
+                  <name>c3</name>
+                  <constraint>
+                    <height>-1</height>
+                    <width>-1</width>
+                    <x>90</x>
+                    <y>141</y>
+                  </constraint>
+                  <sourceConnections>
+                    <net.java.amateras.uml.classdiagram.model.AssociationModel reference="../../.."/>
+                  </sourceConnections>
+                  <targetConnections>
+                    <net.java.amateras.uml.classdiagram.model.DependencyModel>
+                      <stereoType></stereoType>
+                      <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../../../../../../../.."/>
+                      <target class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+                      <bendpoints/>
+                      <showIcon>true</showIcon>
+                      <listeners serialization="custom">
+                        <java.beans.PropertyChangeSupport>
+                          <default>
+                            <source class="net.java.amateras.uml.classdiagram.model.DependencyModel" reference="../../../.."/>
+                            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                          </default>
+                          <null/>
+                        </java.beans.PropertyChangeSupport>
+                      </listeners>
+                    </net.java.amateras.uml.classdiagram.model.DependencyModel>
+                  </targetConnections>
+                  <children/>
+                  <filterProperty/>
+                  <backgroundColor>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>206</blue>
+                  </backgroundColor>
+                  <foregroundColor>
+                    <red>0</red>
+                    <green>0</green>
+                    <blue>0</blue>
+                  </foregroundColor>
+                  <showIcon>true</showIcon>
+                  <parent class="net.java.amateras.uml.model.RootModel" reference="../../../../../../../../.."/>
+                  <listeners serialization="custom">
+                    <java.beans.PropertyChangeSupport>
+                      <default>
+                        <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../../.."/>
+                        <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                      </default>
+                      <null/>
+                    </java.beans.PropertyChangeSupport>
+                  </listeners>
+                </source>
+                <target class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+                <bendpoints/>
+                <showIcon>true</showIcon>
+                <listeners serialization="custom">
+                  <java.beans.PropertyChangeSupport>
+                    <default>
+                      <source class="net.java.amateras.uml.classdiagram.model.AssociationModel" reference="../../../.."/>
+                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                    </default>
+                    <null/>
+                  </java.beans.PropertyChangeSupport>
+                </listeners>
+              </net.java.amateras.uml.classdiagram.model.AssociationModel>
+            </targetConnections>
+            <children/>
+            <filterProperty/>
+            <backgroundColor reference="../targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/backgroundColor"/>
+            <foregroundColor reference="../targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/foregroundColor"/>
+            <showIcon>true</showIcon>
+            <parent class="net.java.amateras.uml.model.RootModel" reference="../../../../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+          </target>
+          <bendpoints/>
+          <showIcon>true</showIcon>
+          <listeners serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="net.java.amateras.uml.classdiagram.model.DependencyModel" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </listeners>
+        </net.java.amateras.uml.classdiagram.model.DependencyModel>
+        <net.java.amateras.uml.classdiagram.model.GeneralizationModel reference="../net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.GeneralizationModel"/>
+        <net.java.amateras.uml.classdiagram.model.DependencyModel reference="../net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/targetConnections/net.java.amateras.uml.classdiagram.model.DependencyModel"/>
+      </sourceConnections>
+      <targetConnections>
+        <net.java.amateras.uml.classdiagram.model.GeneralizationModel>
+          <source class="net.java.amateras.uml.classdiagram.model.InterfaceModel">
+            <propertyDescriptors>
+              <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                <id class="string">_stereo_type</id>
+                <display>Stereo Type</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_simpleEntityName</id>
+                <display>Simple Name</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+              <org.eclipse.ui.views.properties.TextPropertyDescriptor>
+                <id class="string">_entityName</id>
+                <display>Name</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.TextPropertyDescriptor>
+              <org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+                <id class="string">_background</id>
+                <display>Background Color</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.ColorPropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_attrs</id>
+                <display>Attributes...</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+              <org.eclipse.ui.views.properties.PropertyDescriptor>
+                <id class="string">_operations</id>
+                <display>Operations...</display>
+                <incompatible>false</incompatible>
+              </org.eclipse.ui.views.properties.PropertyDescriptor>
+            </propertyDescriptors>
+            <stereoType></stereoType>
+            <name>Interface1</name>
+            <constraint>
+              <height>-1</height>
+              <width>-1</width>
+              <x>228</x>
+              <y>32</y>
+            </constraint>
+            <sourceConnections>
+              <net.java.amateras.uml.classdiagram.model.GeneralizationModel reference="../../.."/>
+            </sourceConnections>
+            <targetConnections/>
+            <children/>
+            <filterProperty/>
+            <backgroundColor reference="../../../../sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/backgroundColor"/>
+            <foregroundColor reference="../../../../sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/foregroundColor"/>
+            <showIcon>true</showIcon>
+            <parent class="net.java.amateras.uml.model.RootModel" reference="../../../../../.."/>
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="net.java.amateras.uml.classdiagram.model.InterfaceModel" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+          </source>
+          <target class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../.."/>
+          <bendpoints/>
+          <showIcon>true</showIcon>
+          <listeners serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="net.java.amateras.uml.classdiagram.model.GeneralizationModel" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </listeners>
+        </net.java.amateras.uml.classdiagram.model.GeneralizationModel>
+      </targetConnections>
+      <children/>
+      <filterProperty/>
+      <backgroundColor reference="../sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/backgroundColor"/>
+      <foregroundColor reference="../sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/foregroundColor"/>
+      <showIcon>true</showIcon>
+      <parent class="net.java.amateras.uml.model.RootModel" reference="../../.."/>
+      <listeners serialization="custom">
+        <java.beans.PropertyChangeSupport>
+          <default>
+            <source class="net.java.amateras.uml.classdiagram.model.ClassModel" reference="../../../.."/>
+            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          </default>
+          <null/>
+        </java.beans.PropertyChangeSupport>
+      </listeners>
+    </net.java.amateras.uml.classdiagram.model.ClassModel>
+    <net.java.amateras.uml.classdiagram.model.ClassModel reference="../net.java.amateras.uml.classdiagram.model.ClassModel/sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target"/>
+    <net.java.amateras.uml.classdiagram.model.ClassModel reference="../net.java.amateras.uml.classdiagram.model.ClassModel/sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source"/>
+    <net.java.amateras.uml.classdiagram.model.InterfaceModel reference="../net.java.amateras.uml.classdiagram.model.ClassModel/targetConnections/net.java.amateras.uml.classdiagram.model.GeneralizationModel/source"/>
+  </children>
+  <filterProperty/>
+  <backgroundColor reference="../children/net.java.amateras.uml.classdiagram.model.ClassModel/sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/backgroundColor"/>
+  <foregroundColor reference="../children/net.java.amateras.uml.classdiagram.model.ClassModel/sourceConnections/net.java.amateras.uml.classdiagram.model.DependencyModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AssociationModel/source/foregroundColor"/>
+  <showIcon>true</showIcon>
+  <listeners serialization="custom">
+    <java.beans.PropertyChangeSupport>
+      <default>
+        <source class="net.java.amateras.uml.model.RootModel" reference="../../../.."/>
+        <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+      </default>
+      <null/>
+    </java.beans.PropertyChangeSupport>
+  </listeners>
+</net.java.amateras.uml.model.RootModel>

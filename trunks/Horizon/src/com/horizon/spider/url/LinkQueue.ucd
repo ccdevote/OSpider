@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="LinkQueue" size="977,1165" id="com.horizon.spider.url" metadata="uml2-1.0" initialized="true" scrolledY="735" tag="10" key="32303037303533312D313020486F72697A6F6E">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="CrawlURL" location="50,50" size="218,340" id="com.horizon.spider.url/CrawlURL">
+    <children xsi:type="editmodel:CompartmentEditModel" size="195,270">
+      <children xsi:type="editmodel:AttributeEditModel" name="abstractText" id="com.horizon.spider.url/CrawlURL#abstractText"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="author" id="com.horizon.spider.url/CrawlURL#author"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="com.horizon.spider.url/CrawlURL#description"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fileSize" id="com.horizon.spider.url/CrawlURL#fileSize"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hitNum" id="com.horizon.spider.url/CrawlURL#hitNum"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lastUpdateTime" id="com.horizon.spider.url/CrawlURL#lastUpdateTime"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layer" id="com.horizon.spider.url/CrawlURL#layer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="statusCode" id="com.horizon.spider.url/CrawlURL#statusCode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="timeToLive" id="com.horizon.spider.url/CrawlURL#timeToLive"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="title" id="com.horizon.spider.url/CrawlURL#title"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="com.horizon.spider.url/CrawlURL#type"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="url" id="com.horizon.spider.url/CrawlURL#url"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="urlNO" id="com.horizon.spider.url/CrawlURL#urlNO"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="urlRefrences" id="com.horizon.spider.url/CrawlURL#urlRefrences"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="wieght" id="com.horizon.spider.url/CrawlURL#wieght"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="93,18">
+      <children xsi:type="editmodel:MethodEditModel" name="CrawlURL" id="com.horizon.spider.url/CrawlURL#CrawlURL()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LinkQueue" location="93,450" size="204,250" id="com.horizon.spider.url/LinkQueue">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,198">
+      <children xsi:type="editmodel:MethodEditModel" name="addFailedURL" id="com.horizon.spider.url/LinkQueue#addFailedURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addUnVisitedURL" id="com.horizon.spider.url/LinkQueue#addUnVisitedURL(Ljava.util.Queue;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addUnVisitedURL" id="com.horizon.spider.url/LinkQueue#addUnVisitedURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addVisitedUrl" id="com.horizon.spider.url/LinkQueue#addVisitedUrl(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFailedURL" id="com.horizon.spider.url/LinkQueue#getFailedURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFailedURLCount" id="com.horizon.spider.url/LinkQueue#getFailedURLCount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUnVisitedURL" id="com.horizon.spider.url/LinkQueue#getUnVisitedURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUnVisitedURLQueue" id="com.horizon.spider.url/LinkQueue#getUnVisitedURLQueue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUnvisitedCount" id="com.horizon.spider.url/LinkQueue#getUnvisitedCount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVisitedURLNum" id="com.horizon.spider.url/LinkQueue#getVisitedURLNum()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="unVisitedURLISEmpty" id="com.horizon.spider.url/LinkQueue#unVisitedURLISEmpty()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.url/LinkQueue-Standard::Call->com.horizon.spider.util/SimpleBloomFilter*com.horizon.spider.url/LinkQueue-Standard::Instantiate->com.horizon.spider.util/SimpleBloomFilter*com.horizon.spider.url/LinkQueue-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,250" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="82,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.url/LinkQueue-Standard::Call->com.horizon.spider.url/CrawlURL*com.horizon.spider.url/LinkQueue-Standard::Instantiate->com.horizon.spider.url/CrawlURL*com.horizon.spider.url/LinkQueue-Soyatec::Import->com.horizon.spider.url/CrawlURL" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="87,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="130,340"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@children.2/@children.0/@sourceConnections.0 //@children.1/@sourceConnections.0" name="SimpleBloomFilter" location="132,852" size="204,293" id="com.horizon.spider.util/SimpleBloomFilter" runTimeClassModel="readBit(Ljava.lang.String;),SimpleBloomFilter(),SimpleBloomFilter(I),count,com.horizon.spider.util.SimpleBloomFilter.SimpleHash,add(Ljava.lang.String;),contains(Ljava.lang.String;),saveBit(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="count" id="com.horizon.spider.util/SimpleBloomFilter#count"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="142,108">
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleBloomFilter" id="com.horizon.spider.util/SimpleBloomFilter#SimpleBloomFilter()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleBloomFilter" id="com.horizon.spider.util/SimpleBloomFilter#SimpleBloomFilter(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="com.horizon.spider.util/SimpleBloomFilter#add(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contains" id="com.horizon.spider.util/SimpleBloomFilter#contains(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="readBit" id="com.horizon.spider.util/SimpleBloomFilter#readBit(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveBit" id="com.horizon.spider.util/SimpleBloomFilter#saveBit(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="144,90">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="SimpleHash" location="2066,1886" size="144,88" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash" runTimeClassModel="SimpleHash(II),hash(Ljava.lang.String;)">
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="106,36">
+          <children xsi:type="editmodel:MethodEditModel" name="SimpleHash" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash#SimpleHash(II)"/>
+          <children xsi:type="editmodel:MethodEditModel" name="hash" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash#hash(Ljava.lang.String;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@" source="//@children.2/@children.2/@children.0" target="//@children.2" targetEnd="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.2" label="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+          <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+          <children xsi:type="editmodel:AssociationEndEditModel" name="func" location="0,5" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@|com.horizon.spider.util/SimpleBloomFilter$SimpleHash#func" attachSource="true" multiplicityLabel="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@children.2/@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+            <children xsi:type="editmodel:LabelEditModel" name=" - func" location="94,1030" size="41,15" anchorKind="FirstPart"/>
+            <children xsi:type="editmodel:LabelEditModel" name="*" location="128,1059" size="7,15" anchorKind="FirstPart"/>
+          </children>
+          <children xsi:type="editmodel:AssociationEndEditModel" location="204,255" id="com.horizon.spider.util/SimpleBloomFilter$SimpleHash@func+com.horizon.spider.util/SimpleBloomFilter@|com.horizon.spider.util/SimpleBloomFilter#"/>
+        </sourceConnections>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Call->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Instantiate->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash" source="//@children.2" target="//@children.2/@children.2/@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,235" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="22,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" properties="open=com.horizon.spider.url/LinkQueue;wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
