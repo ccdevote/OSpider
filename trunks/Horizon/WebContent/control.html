@@ -2,9 +2,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Horizon 管理界面</title>
+<script type="text/javascript" src="res/jquery-1.6.2.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#start").click(function(){
+		$.post("action/SpiderAction!startSpider",function(data){
+			alert(data);
+		})
+	})
+})
+</script>
 </head>
 <body>
+<input type="button" value="开始" id="start"/>
+<input type="button" value="暂停" id="pause"/>
+<input type="button" value="结束" id="shutdown"/> 
 <a href="action/SpiderAction!startSpider">开始</a>
 </body>
 </html>
