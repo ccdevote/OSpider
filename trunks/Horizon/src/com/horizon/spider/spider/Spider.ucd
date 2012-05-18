@@ -104,7 +104,7 @@
       <children xsi:type="editmodel:AssociationEndEditModel" location="179,196" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="49,0"/>
     </sourceConnections>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.spider/Spider-Standard::Call->com.horizon.spider.connector/HttpClientManager*com.horizon.spider.spider/Spider-Standard::Instantiate->com.horizon.spider.connector/HttpClientManager*com.horizon.spider.spider/Spider-Soyatec::Import->com.horizon.spider.connector/HttpClientManager" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.4/@children.2" label="//@children.4/@sourceConnections.4/@children.0" sourceEnd="//@children.4/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.spider/Spider->Standard::Call" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.4/@children.2" label="//@children.4/@sourceConnections.4/@children.0" sourceEnd="//@children.4/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="209,0" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="2,247"/>
@@ -114,7 +114,7 @@
       <children xsi:type="editmodel:AssociationEndEditModel" location="47,196" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="218,20"/>
     </sourceConnections>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.spider/Spider-Standard::Call->com.horizon.spider.tasker/Tasker*com.horizon.spider.spider/Spider-Soyatec::Import->com.horizon.spider.tasker/Tasker" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.6/@children.2" label="//@children.4/@sourceConnections.6/@children.0" sourceEnd="//@children.4/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.spider/Spider->Standard::Call" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.6/@children.2" label="//@children.4/@sourceConnections.6/@children.0" sourceEnd="//@children.4/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="86,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="15,0" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="139,255"/>
@@ -148,7 +148,7 @@
   <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.3" name="Fetcher" location="564,787" size="192,103" id="com.horizon.spider.fetcher/Fetcher">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="80,36">
-      <children xsi:type="editmodel:MethodEditModel" name="Fetcher" id="com.horizon.spider.fetcher/Fetcher#Fetcher(ILjava.util.concurrent.CountDownLatch;Ljava.util.concurrent.CountDownLatch;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Fetcher" id="com.horizon.spider.fetcher/Fetcher#Fetcher(ILjava.util.concurrent.CountDownLatch;Ljava.util.concurrent.CountDownLatch;Lcom.horizon.spider.tasker.Tasker;)"/>
       <children xsi:type="editmodel:MethodEditModel" name="call" id="com.horizon.spider.fetcher/Fetcher#call()"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel"/>

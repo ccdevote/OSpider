@@ -34,7 +34,7 @@
       </children>
       <children xsi:type="editmodel:AssociationEndEditModel" location="165,111" id="com.horizon.spider.tasker/TaskerManager@tm+com.horizon.spider.api/SpiderAPI@|com.horizon.spider.api/SpiderAPI#"/>
     </sourceConnections>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.tasker/TaskerManager-Standard::Call->com.horizon.spider.tasker/Tasker*com.horizon.spider.tasker/TaskerManager-Soyatec::Import->com.horizon.spider.tasker/Tasker" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.tasker/TaskerManager->Standard::Call" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="86,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="181,60" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>

@@ -16,6 +16,7 @@ package com.horizon.spider.tasker;
  * 最大下载数量:long
  * 最大下载流量:long
  * 最大下载时间:int
+ * 任务状态：int
  *
  */
 public class Tasker {
@@ -51,6 +52,13 @@ public class Tasker {
 	 * @uml.property  name="maxDownloadTime"
 	 */
 	private Long maxDownloadTime;
+	private Integer status=0;
+	public Integer getStatus() {
+		return status;
+	}
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
 	/**
 	 * @return
 	 * @uml.property  name="maxDownloadTime"
@@ -112,6 +120,7 @@ public class Tasker {
 	public String getTaskDescription() {
 		return taskDescription;
 	}
+	
 	/**
 	 * @param taskDescription
 	 * @uml.property  name="taskDescription"

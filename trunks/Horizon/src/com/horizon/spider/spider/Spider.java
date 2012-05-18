@@ -1,5 +1,6 @@
 package com.horizon.spider.spider;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import java.util.concurrent.CountDownLatch;
@@ -41,7 +42,7 @@ public class Spider {
 	 * @uml.property  name="future"
 	 * @uml.associationEnd  qualifier="valueOf:java.lang.Integer java.util.concurrent.Future"
 	 */
-	private Map<Integer, Future<String>> future;
+	private Map<Integer, Future<String>> future=new HashMap<Integer,Future<String>>();
 	/**
 	 * @uml.property  name="task"
 	 * @uml.associationEnd  multiplicity="(1 1)"
@@ -82,7 +83,7 @@ public class Spider {
 	public void start() {
 		for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
 			log.info("初始化线程：" + i);
-			es.submit(new Fetcher(i, BEGIN, END));
+			future.put(i,es.submit(new Fetcher(i, BEGIN, END,task)));
 		}
 		HttpClientManager cm = new HttpClientManager(true);
 		String fu = LinkQueue.getUnVisitedURL().getCriUrl();
@@ -112,6 +113,7 @@ public class Spider {
 	 * 任务立刻终止
 	 */
 	public void shutDownNow() {
+		task.setStatus(-2);
 		if (!es.isShutdown()) {
 			es.shutdownNow();
 		}
@@ -121,9 +123,11 @@ public class Spider {
 	 * 任务暂停，等待restart
 	 */
 	public void pause() {
-		for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
+		task.setStatus(-1);
+		/*for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
 			log.info("初始化线程：" + i);
 			Future<String> f = future.get(i);
+			f.cancel(true);
 			if (!(f.isCancelled() && f.isDone())) {
 				try {
 					f.wait(Long.MAX_VALUE);
@@ -132,11 +136,11 @@ public class Spider {
 				}
 			}
 
-		}
+		}*/
 	}
 
 	/**
-	 * 暂停 制定的时长
+	 * 暂停 指定的时长
 	 * 
 	 * @param time
 	 */
@@ -159,14 +163,17 @@ public class Spider {
 	 * 重启暂停的线程
 	 */
 	public void restart() {
-		for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
+		System.out.println("restart Spider");
+		task.setStatus(1);
+	//	BEGIN.notifyAll();
+		/*for (int i = 1; i <= DOWNLOAD_THREAD; i++) {
 			log.info("初始化线程：" + i);
 			Future<String> f = future.get(i);
 			if (!(f.isCancelled() && f.isDone())) {
 				f.notify();
 			}
 
-		}
+		}*/
 	}
 
 }

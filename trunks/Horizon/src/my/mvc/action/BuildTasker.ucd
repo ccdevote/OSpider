@@ -6,7 +6,7 @@
       <children xsi:type="editmodel:MethodEditModel" name="buildOrder" id="my.mvc.action/BuildTasker#buildOrder(Ljava.util.Map;)"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel"/>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.action/BuildTasker-Standard::Instantiate->com.horizon.spider.tasker/Tasker*my.mvc.action/BuildTasker-Soyatec::Import->com.horizon.spider.tasker/Tasker" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.action/BuildTasker->Standard::Instantiate" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="131,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="147,35" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,35"/>

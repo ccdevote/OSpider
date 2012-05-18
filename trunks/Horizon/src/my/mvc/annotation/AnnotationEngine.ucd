@@ -19,7 +19,7 @@
       <children xsi:type="editmodel:MethodEditModel" name="params" id="my.mvc.annotation/AnnotationEngine#params(Ljava.lang.String;)"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel"/>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.annotation/AnnotationEngine-Standard::Send->my.mvc.controler/ActionException*my.mvc.annotation/AnnotationEngine-Standard::Instantiate->my.mvc.controler/ActionException" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="my.mvc.annotation/AnnotationEngine->Standard::Send" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Send»" size="123,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="204,128" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="5,0"/>

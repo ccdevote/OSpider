@@ -31,7 +31,7 @@
         <children xsi:type="editmodel:LabelEditModel" name="*" location="46,281" size="7,15" anchorKind="LastPart"/>
       </children>
     </sourceConnections>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Call->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Standard::Instantiate->com.horizon.spider.util/SimpleBloomFilter$SimpleHash*com.horizon.spider.util/SimpleBloomFilter-Soyatec::Import->com.horizon.spider.util/SimpleBloomFilter$SimpleHash" source="//@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.horizon.spider.util/SimpleBloomFilter->Soyatec::Import" source="//@children.0" target="//@children.0/@children.2/@children.0" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="162,15" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="204,190" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,12"/>

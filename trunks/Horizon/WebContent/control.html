@@ -9,16 +9,33 @@
 $(document).ready(function(){
 	$("#start").click(function(){
 		$.post("action/SpiderAction!startSpider",function(data){
-			alert(data);
+			$("#message").html("爬虫已启动");
+			$("#start").remove();
+		})
+	});
+	$("#pause").click(function(){
+		$.post("action/SpiderAction!pauseSpider",function(data){
+			$("#message").html("爬虫已暂停");
+		})
+	});
+	$("#restart").click(function(){
+		$.post("action/SpiderAction!restartSpider",function(data){
+			$("#message").html("爬虫已重新启动");
+		})
+	});
+	$("#shutdown").click(function(){
+		$.post("action/SpiderAction!shutDownSpider",function(data){
+			$("#message").html("爬虫已结束");
 		})
 	})
 })
 </script>
 </head>
 <body>
+<div id="message"></div>
 <input type="button" value="开始" id="start"/>
 <input type="button" value="暂停" id="pause"/>
+<input type="button" value="继续" id="restart"/>
 <input type="button" value="结束" id="shutdown"/> 
-<a href="action/SpiderAction!startSpider">开始</a>
 </body>
 </html>

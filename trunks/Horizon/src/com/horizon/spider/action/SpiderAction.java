@@ -27,16 +27,30 @@ public class SpiderAction {
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return "input";
 		} catch (InvocationTargetException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return "input";
 		}
 		return "success";
 	}
 
 	public String startSpider() {
-		System.out.println("SpiderAction start spider");
 		sapi.startSpider();
+		return "success";
+	}
+	public String pauseSpider(){
+		sapi.pauseSpider();
+		return "success";
+	}
+	public String shutDownSpider(){
+		//System.out.println("shutdown spider ...");
+		sapi.shutDownSpider(true);
+		return "success";
+	}
+	public String restartSpider(){
+		sapi.restartSpider();
 		return "success";
 	}
 }

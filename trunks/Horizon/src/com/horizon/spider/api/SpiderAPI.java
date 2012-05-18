@@ -64,6 +64,26 @@ public class SpiderAPI {
 	 * @param force
 	 */
 	public void shutDownSpider(boolean force) {
-
+		if(force)
+			spider.shutDownNow();
+		else 
+			spider.shutDown();
+	}
+	/**
+	 * 暂停爬虫的全部任务
+	 */
+	public void pauseSpider(){
+		spider.pause();
+	}
+	/**
+	 * 暂停爬虫全部任务一段时间
+	 * @param time
+	 */
+	public void pauseSpider(long time){
+		
+		spider.pause(time);
+	}
+	public void restartSpider(){
+		spider.restart();
 	}
 }
