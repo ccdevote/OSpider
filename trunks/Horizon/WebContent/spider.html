@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="extjs/ext-all.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="extjs/resources/css/ext-all.css">
+<script type="text/javascript">
+	Ext.onReady(function() {
+		Ext.create('Ext.Viewport', {
+			layout : 'border',
+			items : [{
+				id : 'west-panel',
+				title : 'West',
+				region : 'west',
+				html : "此处显示功能导航",
+				split : true,
+				width : 200,
+				minSize : 175,
+				maxSize : 400,
+				collapsible : true,
+				margins : '0 0 5 5',
+				cmargins : '35 5 5 5',
+				layout : 'accordion',
+				layoutConfig : {
+					animate : true,
+				},
+			},
+
+			],
+		});
+	})
+</script>
+</head>
+<body>
+
+</body>
+</html>
